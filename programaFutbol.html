@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa calcular puntos</title>
+</head>
+<body>
+    <h1>Calcular puntos programa de futbol</h1>
+    <h2>Trabajamos con condiciones</h2>
+    <ol>
+        <li> Condicionales If-Else</li>
+        <li> ParseInt: Interaccion con usuario insertar informacion</li>
+        <li>prompt cartel</li>
+    </ol>
+    
+<script>
+
+    function SaltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+            };
+
+    function imprimir(frase){
+        document.write (frase)
+        SaltarLinea();
+            };
+
+
+
+ var victorias = parseInt(prompt("Informe la cantidad de victorias: "));
+ var empates = parseInt(prompt("Informe la canttidad de empates: "));
+
+ var puntosTotal = (victorias * 3) + empates;
+
+ imprimir ("El total de puntos es: " + puntosTotal);
+
+ //Trabajando con boleaannos, o sea, con dos posibilidades, true o false//
+
+ if (puntosTotal > 28) {
+
+ imprimir ("El equipo esta mejor que el año pasado");
+
+};
+
+ if (puntosTotal < 28) {
+
+ imprimir ("El equipo esta peor que el año pasado");
+
+};
+
+ if (puntosTotal == 28) {
+
+ imprimir ("El equipo está igual al año pasado");
+
+};
+
+
+</script>
+
+<script>
+    var numero = 10;
+if(numero >= 2 &&  numero < 12) {
+    alert("ENTRÓ!");
+}
+</script>
+
+
+
+    
+</body>
+</html>
